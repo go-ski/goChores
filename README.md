@@ -1,30 +1,24 @@
-# palpable
+# go_chores
 
-Palpable is an example [pal](https://github.com/simonpcouch/pal) extension 
-package. It provides two pals, `"boop"` and `"wop"`, that are automatically 
-registered with pal on package load. They're pretty silly; they just reply
-"beep bop boop" and "wee wee wop" regardless of what you ask of them, 
-respectively.
+is a personal collection of LLM prompts for the [chores](https://github.com/simonpcouch/chores) 
+package. The named prompts (roles) are automatically registered with chores on package load. 
 
-There are really only two non-boilerplate components to this R package:
-
-* There's one markdown file per role in `inst/` (each created with 
-  `prompt_new()`). 
+* There's one markdown prompt file per role in `inst/` 
 * There's a call to `pal::directory_load()`
   in the package's `.onLoad()`, referencing the extension package's
-  `system.file()`. This will automatically register `"beep"` and `"wop"` with
-  pal when palpable is loaded.
+  `system.file()`. This will automatically register all roles when go_chores is loaded.
 
 ## Installation
 
-You can install the development version of palpable like so:
+You can install the package from GitHub with:
 
 ``` r
-pak::pak("simonpcouch/palpable")
+pak::pak("go_ski/go_chores")
 ```
 
-When users load the package, two new roles will be registered with the
-pal package:
+## Usage
 
-![A screen recording in RStudio. The pal addin is opened up and only the default pal roles are listed. Then, the package is loaded and the pal addin reopened, showing two new roles: boop and wop.](https://github.com/simonpcouch/palpable/blob/main/inst/example.gif?raw=true)
-
+```r
+library(go_chores)
+```
+This will load the [chores](https://simonpcouch.github.io/chores/) package and register the go_chores prompts as roles with chores.
