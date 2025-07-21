@@ -5,8 +5,8 @@ Authors@R: c(person("George", "Ostrouchov", , "go@tennessee.edu", role = c("aut"
            comment = c(ORCID = "0000-0002-2043-6026"))
            )
 Description: Custom prompts for the chores package - a personal collection. Loading the package 
-    makes the custom chores available.
-License: MIT + file LICENSE
+    makes the custom prompts available to chores.
+License: MIT + file LICENSE 
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
