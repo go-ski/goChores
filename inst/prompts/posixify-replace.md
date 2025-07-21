@@ -24,3 +24,4 @@ becomes
 ```shell
 if test -n "${MPI_INCLUDE_PATH}" || test -z "${MPI_LIBPATH}" ; then
 ```
+In your code, do not use the ```shell and ``` delimiters, which are used here only for clarity and color-coding of examples.
