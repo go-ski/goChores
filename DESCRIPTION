@@ -1,4 +1,4 @@
-Package: go_chores
+Package: goChores
 Title: go's custom chores
 Version: 0.0.1
 Authors@R: c(person("George", "Ostrouchov", , "go@tennessee.edu", role = c("aut", "cre"),
@@ -6,13 +6,13 @@ Authors@R: c(person("George", "Ostrouchov", , "go@tennessee.edu", role = c("aut"
            )
 Description: Custom prompts for the chores package - a personal collection. Loading the package 
     makes the custom prompts available to chores.
-License: MIT + file LICENSE 
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Imports: 
     chores
 Remotes:
-    go-ski/go_pal
-URL: https://github.com/go-ski/go_chores
-BugReports: https://github.com/go-ski/go_chores/issues
+    go-ski/goChores
+URL: https://github.com/go-ski/goChores
+BugReports: https://github.com/go-ski/goChores/issues
